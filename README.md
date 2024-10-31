@@ -5,13 +5,13 @@ Data Structures + Algorithms
 
 https://www.toptal.com/developers/sorting-algorithms
 
-- [x] bubble
+- [x] [bubble](./sorting/bubble.go)
 - [ ] counting
 - [ ] heap
-- [ ] insertion
+- [x] [insertion](./sorting/insertion.go)
 - [ ] merge
 - [ ] quick
 - [ ] radix
 - [ ] README
-- [x] selection
+- [x] [selection](./sorting/selection.go)
 - [ ] sorting

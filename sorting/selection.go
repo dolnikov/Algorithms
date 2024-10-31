@@ -1,23 +1,21 @@
 package sorting
 
-import "fmt"
-
-func (a *Algorithms) SelectionSorting() {
-	length := len(a.dataSet)
+func (a *Algorithms) SelectionSorting(arr []int) []int {
+	length := len(arr)
 	for i := 0; i < length; i++ {
 
 		nMin := i
-		temp := a.dataSet[i]
+		temp := arr[i]
 
 		for j := i + 1; j < length; j++ {
-			if a.dataSet[j] < a.dataSet[nMin] {
+			if arr[j] < arr[nMin] {
 				nMin = j
 			}
 		}
 
-		a.dataSet[i] = a.dataSet[nMin]
-		a.dataSet[nMin] = temp
+		arr[i] = arr[nMin]
+		arr[nMin] = temp
 	}
 
-	fmt.Println(a.dataSet)
+	return arr
 }

@@ -4,8 +4,15 @@ import (
 	"github.com/dolnikov/Algorithms/sorting"
 )
 
+type IAlgorithms interface {
+	Run()
+}
+
 func main() {
 	algorithms := sorting.NewSorting()
-	//algorithms.BubbleSorting()
-	algorithms.SelectionSorting()
+	run(algorithms)
+}
+
+func run(a IAlgorithms) {
+	a.Run()
 }
